@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Layouts</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body onLoad="setToday()">
+		<h1>Layouts</h1>
+		<!-- <div class="cube-container">
+			<div class="cube">
+				<div class="face"></div>
+				<div class="face"></div>
+				<div class="face"></div>
+				<div class="face"></div>
+				<div class="face"></div>
+				<div class="face"></div>
+			</div>
+		</div> -->
+		<!-- <div class="landscape">
+			<div class="device"></div>
+			<div class="device"></div>
+		</div> -->
+		<center>
+			<h2>Календарь</h2>
+			<form name="Control">
+				<select name="month" onChange="selectDate()">
+					<option>Январь</option>
+					<option>Февраль</option>
+					<option><h2>Март</h2></option>
+					<option>Апрель</option>
+					<option>Май</option>
+					<option>Июнь</option>
+					<option>Июль</option>
+					<option>Август</option>
+					<option>Сентябрь</option>
+					<option>Октябрь</option>
+					<option>Ноябрь</option>
+					<option>Декабрь</option>
+				</select>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<select name="year" onChange="selectDate()">
+					<script language="JavaScript">
+						for (var i = 1900; i < 2900; i++)
+							document.write("<OPTION>" + i + "</OPTION>");
+					</script>
+				</select>
+			</form>
+			<form name="Calend">
+				<table
+					id="calTab"
+					cellspacing="0"
+					cellpadding="0"
+					border="1"
+					style="font-family: serif"
+				>
+					<tbody id="calBody"></tbody>
+				</table>
+			</form>
+			<form name="Buttons">
+				<input type="button" name="prev" value="  <<  " onClick="setPrev()" />
+				<input
+					type="button"
+					name="today"
+					value="Сегодня"
+					onClick="setToday()"
+				/>
+				<input type="button" name="next" value="  >>  " onClick="setNext()" />
+			</form>
+		</center>
+	</body>
+	<script src="./script.js"></script>
+</html>
+
+<!-- ******************************************************** -->
