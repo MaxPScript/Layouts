@@ -4,20 +4,23 @@
 	box-sizing: border-box;
 }
 html {
-	display: grid;
-	min-height: 100vh;
+	/* display: grid; */
+	/* min-height: 100vh; */
+	background-color: hsl(205, 65%, 40%);
+	background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 body {
 	width: 100%;
-	display: grid;
-	place-items: center;
-	height: 100%;
-	grid-template-rows: auto 1fr;
+	/* display: grid; */
+	/* place-items: center; */
+	/* height: 100%; */
+	/* grid-template-rows: auto 1fr; */
 }
 
 body {
 	/* min-height: 100vh; */
-	background: beige;
+	/* background: beige; */
 }
 .cube-container {
 	perspective: 800px;
@@ -32,55 +35,3 @@ body {
 	transform: rotateX(45deg) rotateY(45deg);
 	transition: transform 1s;
 }
-
-.face {
-	position: absolute;
-	width: 200px;
-	height: 200px;
-	background-color: rgba(0, 0, 255, 0.7);
-	border: 1px solid #fff;
-}
-
-.face:nth-child(1) {
-	transform: translateZ(100px);
-}
-.face:nth-child(2) {
-	transform: rotateY(90deg) translateZ(100px);
-}
-.face:nth-child(3) {
-	transform: rotateY(180deg) translateZ(100px);
-}
-.face:nth-child(4) {
-	transform: rotateY(-90deg) translateZ(100px);
-}
-.face:nth-child(5) {
-	transform: rotateX(90deg) translateZ(100px);
-}
-.face:nth-child(6) {
-	transform: rotateX(-90deg) translateZ(100px);
-}
-
-/* LANDSCAPE */
-.landscape {
-	position: relative;
-	width: 300px;
-	height: 200px;
-	perspective: 500px;
-}
-.device {
-	position: absolute;
-	width: 300px;
-	height: 200px;
-	transform-style: preserve-3d;
-}
-.device:nth-child(1) {
-	transform: rotate(10deg);
-	transform-origin: 0 0;
-	background: hsl(200 50% 50% / 1);
-}
-.device:nth-child(2) {
-	transform: rotate(20deg);
-	transform-origin: 0 0;
-	background: hsl(250 50% 50% / 1);
-}
-/* LANDSCAPE */
