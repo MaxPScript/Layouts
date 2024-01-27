@@ -18,3 +18,11 @@ body {
 	/* place-items: center; */
 	/* grid-template-rows: auto 1fr; */
 }
+th,
+td {
+	border: 1px solid grey;
+	padding: 1rem;
+}
+.hidden {
+	display: none;
+}
